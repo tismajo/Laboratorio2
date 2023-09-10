@@ -1,6 +1,10 @@
 public class Country {
     private String countryName, location, enclosure;
 
+    Country(){
+        
+    }
+
     public Country(String country, String location, String enclosure) {
         this.countryName = country;
         this.location = location;
