@@ -1,15 +1,11 @@
 public class Enclosure {
-    private int enclosureCountryID, enclosureID, capacity;
+    private int enclosureCountryID, enclosureID, enclosureCapacity;
     private String location;
 
-    Enclosure(){
-        
-    }
-    
-    public Enclosure(int enclosureCountryID, int enclosureID, int capacity, String location) {
+    public Enclosure(int enclosureCountryID, int enclosureID, int enclosureCapacity, String location) {
         this.enclosureCountryID = enclosureCountryID;
         this.enclosureID = enclosureID;
-        this.capacity = capacity;
+        this.enclosureCapacity = enclosureCapacity;
         this.location = location;
     }
 
@@ -29,12 +25,12 @@ public class Enclosure {
         this.enclosureID = enclosureID;
     }
 
-    public int getCapacity() {
-        return capacity;
+    public int getEnclosureCapacity() {
+        return enclosureCapacity;
     }
 
-    public void setCapacity(int capacity) {
-        this.capacity = capacity;
+    public void setEnclosureCapacity(int enclosureCapacity) {
+        this.enclosureCapacity = enclosureCapacity;
     }
 
     public String getLocation() {
@@ -44,5 +40,10 @@ public class Enclosure {
     public void setLocation(String location) {
         this.location = location;
     }
+
+    Enclosure(){
+
+    }
+    
     
 }

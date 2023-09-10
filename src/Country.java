@@ -1,37 +1,25 @@
 public class Country {
-    private String countryName, location, enclosure;
+    /**
+     * Definimos los parámetros para el país, donde se nos especifica que debe tener muchas ubicaciones
+     * y cada ubicación tiene diferentes recintos.
+     */
+    private String countryName, countryLocation, CountryEnclosure;
+
+    public Country(String countryName, String countryLocation, String countryEnclosure) {
+        this.countryName = countryName;
+        this.countryLocation = countryLocation;
+        CountryEnclosure = countryEnclosure;
+    }
+
+    public String getCountryLocation() {
+        return countryLocation;
+    }
+
+    public void setCountryLocation(String countryLocation) {
+        this.countryLocation = countryLocation;
+    }
 
     Country(){
-        
-    }
 
-    public Country(String country, String location, String enclosure) {
-        this.countryName = country;
-        this.location = location;
-        this.enclosure = enclosure;
-    }
-
-    public String getCountry() {
-        return countryName;
-    }
-
-    public void setCountry(String country) {
-        this.countryName = country;
-    }
-
-    public String getLocation() {
-        return location;
-    }
-
-    public void setLocation(String location) {
-        this.location = location;
-    }
-
-    public String getEnclosure() {
-        return enclosure;
-    }
-
-    public void setEnclosure(String enclosure) {
-        this.enclosure = enclosure;
     }
 }
