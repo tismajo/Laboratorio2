@@ -6,7 +6,7 @@ public class Event {
     private Date eventDate;
 
     public Event(int eventID, int eventCountryID, int eventTimeTable, int eventDuration, int eventAttendeesNumber,
-            String artistName, Date eventDate) {
+        String artistName, Date eventDate) {
         this.eventID = eventID;
         this.eventCountryID = eventCountryID;
         this.eventTimeTable = eventTimeTable;
